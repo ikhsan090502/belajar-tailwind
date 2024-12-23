@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.menu-text {
+  @apply text-white font-medium hover:underline;
+}
+
+.custom-font {
+  font-family: "Courier New", Courier, monospace;
+}
+
+.animate-in {
+  animation: animate-innn ease-out forwards;
+  animation-timeline: view();
+  animation-range: entry 10%;
+}
+
+@keyframes animate-innn {
+  0% {
+    opacity: 0;
+    transform: translateY(50%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.card {
+  @apply bg-white p-6 shadow hover:shadow-lg transition cursor-pointer rounded-lg animate-in;
+}
