@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./output.css" />
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
+    </style>
+</head>
+
+<body>
+    <header class="bg-blue-600 py-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-2xl font-bold text-white">Brand</h1>
+            <!-- Navbar Untuk Table & Desktop -->
+            <nav class="text-base gap-4 hidden md:flex">
+                <a class="menu-text" href="#">Home</a>
+                <a class="menu-text" href="#">About Us</a>
+                <a class="menu-text" href="#">Services</a>
+                <a class="menu-text" href="#">Contact</a>
+            </nav>
+            <!-- Navbar Untuk Di Mobile -->
+            <nav id="mobile-menu" class="hidden md:hidden bg-white">
+                <a href="#" class="block text-gray-800 hover:text-gray-300 font-medium py-2 px-4">Home</a>
+                <a href="#" class="block text-gray-800 hover:text-gray-300 font-medium py-2 px-4">About</a>
+                <a href="#" class="block text-gray-800 hover:text-gray-300 font-medium py-2 px-4">Services</a>
+                <a href="#" class="block text-gray-800 hover:text-gray-300 font-medium py-2 px-4">Contact</a>
+            </nav>
+            <!-- Cart dan Burger -->
+            <div class="relative">
+                <a href="#" class="text-white hover:text-gray-300 font-medium flex items-center">
+                    <i class="fa-solid fa-cart-shopping text-2xl mr-2"></i>
+                    <span class="absolute -top-2 -right-2 bg-orange-500 rounded-full px-2 text-white text-xs">5</span>
+                </a>
+            </div>
+            <div class="md:hidden">
+                <i class="fas fa-bars text-white text-3xl cursor-pointer ml-6" onclick="toggleMenu()"></i>
+            </div>
+        </div>
+        <div class="container mx-auto flex flex-col md:flex-row justify-between items-center pt-32 pb-20">
+            <div>
+                <h2 class="text-white text-5xl font-bold mb-4">
+                    Welcome to Our Store
+                </h2>
+                <p class="text-white/90 text-xl">
+                    Discover the amazing features and benefits.
+                </p>
+                <a class="mt-10 inline-block bg-white px-6 py-2 rounded-full font-semibold text-blue-500 hover:bg-slate-200 hover:shadow-lg"
+                    href="#">Start Shopping</a>
+            </div>
+            <img class="w-[400px]" src="./undraw_mobile-content_yz21.svg" alt="Illustrasi" />
+        </div>
+    </header>
+    <section>
+        <div class="container mx-auto pt-32 pb-20">
+            <h1 class="text-4xl mb-6">Our Product</h1>
+            <div class="grid sm:grid-cols-2 md:grid-cols-3 d gap-4">
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1719937050679-c3a2c9c67b0f?q=80&w=2944&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt="" class="object-cover h-60 w-full" />
+                    <h3 class="text-xl font-bold mt-3">Product 01</h3>
+                    <p class="text-orange-500">Rp. 200.000</p>
+                </div>
+                <div class="card">
+                    <img class="object-cover h-60 w-full"
+                        src="https://images.unsplash.com/photo-1615396899839-c99c121888b0?q=80&w=3087&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt="" />
+                    <h3 class="text-xl font-bold mt-3">Product 01</h3>
+                    <p class="text-orange-500">Rp. 200.000</p>
+                </div>
+                <div class="card">
+                    <img class="object-cover h-60 w-full"
+                        src="https://images.unsplash.com/photo-1719937050679-c3a2c9c67b0f?q=80&w=2944&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt="" />
+                    <h3 class="text-xl font-bold mt-3">Product 01</h3>
+                    <p class="text-orange-500">Rp. 200.000</p>
+                </div>
+                <div class="card">
+                    <img class="object-cover h-60 w-full"
+                        src="https://images.unsplash.com/photo-1719937050679-c3a2c9c67b0f?q=80&w=2944&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt="" />
+                    <h3 class="text-xl font-bold mt-3">Product 01</h3>
+                    <p class="text-orange-500">Rp. 200.000</p>
+                </div>
+                <div class="card">
+                    <img class="object-cover h-60 w-full"
+                        src="https://images.unsplash.com/photo-1719937050679-c3a2c9c67b0f?q=80&w=2944&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt="" />
+                    <h3 class="text-xl font-bold mt-3">Product 01</h3>
+                    <p class="text-orange-500">Rp. 200.000</p>
+                </div>
+                <div class="card">
+                    <img class="object-cover h-60 w-full"
+                        src="https://images.unsplash.com/photo-1719937050679-c3a2c9c67b0f?q=80&w=2944&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt="" />
+                    <h3 class="text-xl font-bold mt-3">Product 01</h3>
+                    <p class="text-orange-500">Rp. 200.000</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-8 xl:px-0 py-24">
+            <div class="md:flex md:items-end md:justify-between">
+                <div class="max-w-xl">
+                    <h2 class="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">
+                        Read trusted reviews from our customers
+                    </h2>
+
+                    <p class="mt-6 max-w-lg leading-relaxed text-gray-700">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Aspernatur praesentium natus sapiente commodi. Aliquid sunt
+                        tempore iste repellendus explicabo dignissimos placeat, autem
+                        harum dolore reprehenderit quis! Quo totam dignissimos earum.
+                    </p>
+                </div>
+
+                <a href="#"
+                    class="mt-6 inline-flex shrink-0 items-center gap-2 rounded-full border border-blue-600 px-5 py-3 text-blue-600 transition hover:bg-blue-600 hover:text-white md:mt-0">
+                    <span class="font-medium"> Read all reviews </span>
+
+                    <svg xmlns="http://www.w3.org/2000/svg" class="size-4 rtl:rotate-180" fill="none"
+                        viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                    </svg>
+                </a>
+            </div>
+
+            <div class="mt-8 grid grid-cols-1 gap-8 md:grid-cols-2">
+                <blockquote class="bg-white p-6 shadow-sm hover:shadow-xl transition sm:p-8 animate-in">
+                    <div>
+                        <div class="mt-4">
+                            <div>
+                                <i class="text-orange-400 fa-solid fa-star"></i>
+                                <i class="text-orange-400 fa-solid fa-star"></i>
+                                <i class="text-orange-400 fa-solid fa-star"></i>
+                                <i class="text-orange-400 fa-solid fa-star"></i>
+                                <i class="text-orange-400 fa-regular fa-star"></i>
+                            </div>
+                            <p class="mt-4 leading-relaxed text-gray-700">
+                                No, Rose, they are not breathing. And they have no arms or
+                                legs … Where are they? You know what? If we come across
+                                somebody with no arms or legs, do we bother resuscitating
+                                them? I mean, what quality of life do we have there?
+                            </p>
+                        </div>
+                    </div>
+
+                    <footer class="mt-4 text-sm font-medium text-gray-700 sm:mt-6">
+                        &mdash; Michael Scott
+                    </footer>
+                </blockquote>
+
+                <blockquote class="bg-white p-6 shadow-sm hover:shadow-xl transition sm:p-8 animate-in">
+                    <div>
+                        <div class="mt-4">
+                            <div>
+                                <i class="text-orange-400 fa-solid fa-star"></i>
+                                <i class="text-orange-400 fa-solid fa-star"></i>
+                                <i class="text-orange-400 fa-solid fa-star"></i>
+                                <i class="text-orange-400 fa-solid fa-star"></i>
+                                <i class="text-orange-400 fa-solid fa-star"></i>
+                            </div>
+                            <p class="mt-4 leading-relaxed text-gray-700">
+                                No, Rose, they are not breathing. And they have no arms or
+                                legs … Where are they? You know what? If we come across
+                                somebody with no arms or legs, do we bother resuscitating
+                                them? I mean, what quality of life do we have there?
+                            </p>
+                        </div>
+                    </div>
+
+                    <footer class="mt-4 text-sm font-medium text-gray-700 sm:mt-6">
+                        &mdash; Michael Scott
+                    </footer>
+                </blockquote>
+
+                <blockquote class="bg-white p-6 shadow-sm hover:shadow-xl transition sm:p-8 animate-in">
+                    <div>
+                        <div>
+                            <i class="text-orange-400 fa-solid fa-star"></i>
+                            <i class="text-orange-400 fa-solid fa-star"></i>
+                            <i class="text-orange-400 fa-solid fa-star"></i>
+                            <i class="text-orange-400 fa-solid fa-star"></i>
+                            <i class="text-orange-400 fa-solid fa-star"></i>
+                        </div>
+                        <div class="mt-4">
+                            <p class="mt-4 leading-relaxed text-gray-700">
+                                No, Rose, they are not breathing. And they have no arms or
+                                legs … Where are they? You know what? If we come across
+                                somebody with no arms or legs, do we bother resuscitating
+                                them? I mean, what quality of life do we have there?
+                            </p>
+                        </div>
+                    </div>
+
+                    <footer class="mt-4 text-sm font-medium text-gray-700 sm:mt-6">
+                        &mdash; Michael Scott
+                    </footer>
+                </blockquote>
+
+                <blockquote class="bg-white p-6 shadow-sm hover:shadow-xl transition sm:p-8 animate-in">
+                    <div>
+                        <div>
+                            <i class="text-orange-400 fa-solid fa-star"></i>
+                            <i class="text-orange-400 fa-solid fa-star"></i>
+                            <i class="text-orange-400 fa-solid fa-star"></i>
+                            <i class="text-orange-400 fa-solid fa-star"></i>
+                            <i class="text-orange-400 fa-regular fa-star"></i>
+                        </div>
+                        <div class="mt-4">
+                            <p class="mt-4 leading-relaxed text-gray-700">
+                                No, Rose, they are not breathing. And they have no arms or
+                                legs … Where are they? You know what? If we come across
+                                somebody with no arms or legs, do we bother resuscitating
+                                them? I mean, what quality of life do we have there?
+                            </p>
+                        </div>
+                    </div>
+
+                    <footer class="mt-4 text-sm font-medium text-gray-700 sm:mt-6">
+                        &mdash; Michael Scott
+                    </footer>
+                </blockquote>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
